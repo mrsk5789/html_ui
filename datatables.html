@@ -28,37 +28,69 @@
 		<!-- Data Tables -->
 		<link rel="stylesheet" href="vendor/datatables/dataTables.bs4.css" />
 		<link rel="stylesheet" href="vendor/datatables/dataTables.bs4-custom.css" />
+		<style>
+			#shape{
+            width : 200px;
+            height: 28px;
+            border-radius: 5px;
+        }
+		   #righ{
+			right: 10%;
+
+		   }
+			
+		.left {text-align: left;}
+        .right {  float: right;}
+        .center { text-align: center;}
+		</style>
 
 	</head>
 
 	<body>
-
 		<!-- BEGIN .app-wrap -->
 		<div class="app-wrap">
 			<!-- BEGIN .app-heading -->
 			<header class="app-header">
 				<div class="container-fluid">
 					<div class="row gutters">
-						<div class="col-md-5 col-sm-3 col-4">
-							<a class="mini-nav-btn" href="#" id="app-side-mini-toggler">
+						<a class="mini-nav-btn" href="#" id="app-side-mini-toggler">
 								<i class="icon-sort"></i>
-							</a>
-							<a href="#app-side" data-toggle="onoffcanvas" class="onoffcanvas-toggler" aria-expanded="true">
-								<i class="icon-chevron-thin-left"></i>
-							</a>
+						</a>
+						<a href="#app-side" data-toggle="onoffcanvas" class="onoffcanvas-toggler" aria-expanded="true">
+							<i class="icon-chevron-thin-left"></i>
+						</a>
+						<a href="index.html" class="logo">
+							<img src="img/logo.svg" alt="Low Price Admin Dashboards" />
+						</a>
+						<a href="index.html" class="logo">
+						</a>
+						<a href="index.html" class="logo">
+						</a>
+						<a href="index.html" class="logo">
+						</a>
+						<a href="index.html" class="logo">
+						</a>
+						<a href="index.html" class="logo">
+						</a>
+						<a href="index.html" class="logo">
+						</a>
+						<a href="index.html" class="logo">
+						</a>
+						<a href="index.html" class="logo">
+						</a>
+						<a>
+						<div class="col-md-3 col-sm-5 col-4">
+							
 						</div>
-						<div class="col-md-2 col-sm-6 col-4">
-							<a href="index.html" class="logo">
-								<img src="img/logo.svg" alt="Low Price Admin Dashboards" />
-							</a>
-						</div>
+						</a>
 						<div class="col-md-5 col-sm-3 col-4">
 							<ul class="header-actions">
 								<li class="dropdown">
-									<a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
+									<div class="card-header">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search:<input type=""></div>
+									<!--<a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
 										<i class="icon-notifications_none"></i>
 										<span class="count-label"></span>
-									</a>
+									</a>-->
 									<div class="dropdown-menu dropdown-menu-right lg" aria-labelledby="notifications">
 										<ul class="imp-notify">
 											<li>
@@ -174,7 +206,6 @@
 						<!-- BEGIN .user-profile -->
 						<div class="user-profile">
 							<img src="img/user.png" class="profile-thumb" alt="Admin Dashboards">
-							<h6 class="profile-name">Charlize Theron</h6>
 							<ul class="profile-actions">
 								<li>
 									<a href="#">
@@ -475,16 +506,99 @@
 										<i class="icon-layers"></i>
 									</div>
 									<div class="page-title">
-										<h5>Datatables</h5>
-										<h6 class="sub-heading">Welcome to Emarld Admin Template</h6>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="right-actions">
-										<a href="#" class="btn btn-primary float-right" data-toggle="tooltip" data-placement="left"
-											title="Download Reports">
-											<i class="icon-download4"></i>
-										</a>
+										<nav class="navbar-expand">
+											<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo"aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
+												<span class="navbar-toggler-icon"></span>
+											</button>
+											<div class="collapse navbar-collapse" id="navbarTwo">
+												<ul class="navbar-nav">
+													<li class="nav-item active">
+														<a class="nav-link" href="#">page1><span class="sr-only">(current)</span></a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">page2></a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">default</a>
+													</li>
+												</ul>
+											</div>
+										</nav>
+										<div class="row gutters">
+											<div class="col-sm-4 col-12">
+												<h1>code</h1>
+											</div>
+										</div>	
+										<div class="col-sm-4 col-12">
+											<table>
+												<th>
+													<tr>
+														<td>     
+															<select id = "shape" >
+																<option value="" selected disabled hidden>Y</option>
+																<option value="1">Y</option>
+																<option value="2">N</option>
+																<option value="3">옵션3</option>
+																<option value="4">옵션4</option>
+																<option value="5">옵션5</option>
+															</select>
+														</td> 
+														<td>     
+															<select id = "shape">
+																<option value="" selected disabled hidden>Y</option>
+																<option value="1">Y</option>
+																<option value="2">N</option>
+																<option value="3">옵션3</option>
+																<option value="4">옵션4</option>
+																<option value="5">옵션5</option>
+															</select>
+														</td> 
+														<td>     
+															<select id = "shape">
+																<option value="" selected disabled hidden>수정일</option>
+																<option value="1">Y</option>
+																<option value="2">N</option>
+																<option value="3">옵션3</option>
+																<option value="4">옵션4</option>
+																<option value="5">옵션5</option>
+															</select>
+														</td> 
+														<td>     
+															<input id = "shape" input type="date">
+														</td>
+														<td>     
+															<input id = "shape" input type="date">
+														</td> 
+													</tr>
+												</th>
+												<tr>
+													<td>     
+														<select id = "shape" >
+															<option value="" selected disabled hidden>검색구분</option>
+															<option value="1">Y</option>
+															<option value="2">N</option>
+															<option value="3">옵션3</option>
+															<option value="4">옵션4</option>
+															<option value="5">옵션5</option>
+														</select>
+													</td> 
+													<td>     
+														<input id ="shape" input value="검색어"> 
+													</td> 
+													<td>
+														<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+															<button type="button" class="btn btn-primary">
+																<span class="icon-search"></span>
+															</button>
+														</div>
+														<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+															<button type="button" class="btn btn-primary">
+																<span class="icon-spinner11"></span>
+															</button>
+														</div>
+												    </td>
+												</tr>
+										   </table>
 									</div>
 								</div>
 							</div>
@@ -498,2871 +612,447 @@
 						<div class="row gutters">
 							<div class="col-sm-12">
 								<div class="card">
-									<div class="card-header">Basic Datatable</div>
+								<ul class="header-actions">	
+								    <div class="card-header">
+										<table>
+											<th>
+												<tr>
+													<td> total</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>
+													</td>	
+													<td>
+														<select id = "shape" select id="righ">
+														<option value="" selected disabled hidden>1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+														</select>
+													</td>	
+												</tr>
+											</th>						
+										</table>				
+									</div>
+								</ul>
 									<div class="card-body">
-										<table id="basicExample" class="table table-striped table-bordered">
+										<table class="table table-striped table-bordered">
 											<thead>
 												<tr>
-													<th>Name</th>
-													<th>Position</th>
-													<th>Office</th>
-													<th>Age</th>
-													<th>Start date</th>
-													<th>Salary</th>
+													<th><input type="checkbox"/></th>
+													<th>#</th>
+													<th>코드그룹&nbsp;코드</th>
+													<th>코드그룹&nbsp;이름</th>
+													<th>코드</th>
+													<th>대체코드</th>
+													<th>코드이름</th>
+													<th>코드이름(영문)</th>
+													<th>사용</th>
+													<th>순서</th>
+													<th>등록일</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td>Tiger Nixon</td>
-													<td>System Architect</td>
-													<td>Edinburgh</td>
-													<td>61</td>
+													<td><input type="checkbox"/></td>
+													<td>171</td>
+													<td>57</td>
+													<td>테테테</td>
+													<td>278</td>
+													<td></td>
+													<td>ㅁㄴㅇㄹ</td>
+													<td></td>
+													<td>Y</td>
+													<td>1</td>
 													<td>2011/04/25</td>
-													<td>$320,800</td>
 												</tr>
 												<tr>
-													<td>Garrett Winters</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>63</td>
-													<td>2011/07/25</td>
-													<td>$170,750</td>
-												</tr>
-												<tr>
-													<td>Ashton Cox</td>
-													<td>Junior Technical Author</td>
-													<td>San Francisco</td>
-													<td>66</td>
-													<td>2009/01/12</td>
-													<td>$86,000</td>
-												</tr>
-												<tr>
-													<td>Cedric Kelly</td>
-													<td>Senior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>22</td>
-													<td>2012/03/29</td>
-													<td>$433,060</td>
-												</tr>
-												<tr>
-													<td>Airi Satou</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
+													<td><input type="checkbox"/></td>
+													<td>170</td>
 													<td>33</td>
-													<td>2008/11/28</td>
-													<td>$162,700</td>
+													<td>로그인, 로그인UI</td>
+													<td>272</td>
+													<td></td>
+													<td>사용자</td>
+													<td></td>
+													<td>Y</td>
+													<td>1</td>
+													<td></td>
 												</tr>
 												<tr>
-													<td>Brielle Williamson</td>
-													<td>Integration Specialist</td>
-													<td>New York</td>
-													<td>61</td>
-													<td>2012/12/02</td>
-													<td>$372,000</td>
+													<td><input type="checkbox"/></td>
+													<td>169</td>
+													<td>33</td>
+													<td>로그인, 로그인UI</td>
+													<td>273</td>
+													<td></td>
+													<td>관리자</td>
+													<td></td>
+													<td>Y</td>
+													<td>1</td>
+													<td></td>
 												</tr>
 												<tr>
-													<td>Herrod Chandler</td>
-													<td>Sales Assistant</td>
-													<td>San Francisco</td>
-													<td>59</td>
-													<td>2012/08/06</td>
-													<td>$137,500</td>
+													<td><input type="checkbox"/></td>
+													<td>168</td>
+													<td>32</td>
+													<td>qna.타입</td>
+													<td>266</td>
+													<td></td>
+													<td>기타</td>
+													<td></td>
+													<td>Y</td>
+													<td>1</td>
+													<td></td>
 												</tr>
 												<tr>
-													<td>Rhona Davidson</td>
-													<td>Integration Specialist</td>
-													<td>Tokyo</td>
-													<td>55</td>
-													<td>2010/10/14</td>
-													<td>$327,900</td>
+													<td><input type="checkbox"/></td>
+													<td>167</td>
+													<td>31</td>
+													<td>qna.타입</td>
+													<td>262</td>
+													<td></td>
+													<td>미확인</td>
+													<td></td>
+													<td>Y</td>
+													<td>1</td>
+													<td></td>
 												</tr>
 												<tr>
-													<td>Colleen Hurst</td>
-													<td>Javascript Developer</td>
-													<td>San Francisco</td>
-													<td>39</td>
-													<td>2009/09/15</td>
-													<td>$205,500</td>
+													<td><input type="checkbox"/></td>
+													<td>171</td>
+													<td>57</td>
+													<td>테테테</td>
+													<td>278</td>
+													<td></td>
+													<td>ㅁㄴㅇㄹ</td>
+													<td></td>
+													<td>Y</td>
+													<td>1</td>
+													<td></td>
 												</tr>
 												<tr>
-													<td>Sonya Frost</td>
-													<td>Software Engineer</td>
-													<td>Edinburgh</td>
-													<td>23</td>
-													<td>2008/12/13</td>
-													<td>$103,600</td>
+													<td><input type="checkbox"/></td>
+													<td>171</td>
+													<td>57</td>
+													<td>테테테</td>
+													<td>278</td>
+													<td></td>
+													<td>ㅁㄴㅇㄹ</td>
+													<td></td>
+													<td>Y</td>
+													<td>1</td>
+													<td></td>
 												</tr>
 												<tr>
-													<td>Jena Gaines</td>
-													<td>Office Manager</td>
-													<td>London</td>
-													<td>30</td>
-													<td>2008/12/19</td>
-													<td>$90,560</td>
+													<td><input type="checkbox"/></td>
+													<td>171</td>
+													<td>57</td>
+													<td>테테테</td>
+													<td>278</td>
+													<td></td>
+													<td>ㅁㄴㅇㄹ</td>
+													<td></td>
+													<td>Y</td>
+													<td>1</td>
+													<td></td>
 												</tr>
 												<tr>
-													<td>Quinn Flynn</td>
-													<td>Support Lead</td>
-													<td>Edinburgh</td>
-													<td>22</td>
-													<td>2013/03/03</td>
-													<td>$342,000</td>
-												</tr>
-												<tr>
-													<td>Charde Marshall</td>
-													<td>Regional Director</td>
-													<td>San Francisco</td>
-													<td>36</td>
-													<td>2008/10/16</td>
-													<td>$470,600</td>
-												</tr>
-												<tr>
-													<td>Haley Kennedy</td>
-													<td>Senior Marketing Designer</td>
-													<td>London</td>
-													<td>43</td>
-													<td>2012/12/18</td>
-													<td>$313,500</td>
-												</tr>
-												<tr>
-													<td>Tatyana Fitzpatrick</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>19</td>
-													<td>2010/03/17</td>
-													<td>$385,750</td>
-												</tr>
-												<tr>
-													<td>Michael Silva</td>
-													<td>Marketing Designer</td>
-													<td>London</td>
-													<td>66</td>
-													<td>2012/11/27</td>
-													<td>$198,500</td>
-												</tr>
-												<tr>
-													<td>Paul Byrd</td>
-													<td>Chief Financial Officer (CFO)</td>
-													<td>New York</td>
-													<td>64</td>
-													<td>2010/06/09</td>
-													<td>$725,000</td>
-												</tr>
-												<tr>
-													<td>Gloria Little</td>
-													<td>Systems Administrator</td>
-													<td>New York</td>
-													<td>59</td>
-													<td>2009/04/10</td>
-													<td>$237,500</td>
-												</tr>
-												<tr>
-													<td>Bradley Greer</td>
-													<td>Software Engineer</td>
-													<td>London</td>
-													<td>41</td>
-													<td>2012/10/13</td>
-													<td>$132,000</td>
-												</tr>
-												<tr>
-													<td>Dai Rios</td>
-													<td>Personnel Lead</td>
-													<td>Edinburgh</td>
-													<td>35</td>
-													<td>2012/09/26</td>
-													<td>$217,500</td>
-												</tr>
-												<tr>
-													<td>Jenette Caldwell</td>
-													<td>Development Lead</td>
-													<td>New York</td>
-													<td>30</td>
-													<td>2011/09/03</td>
-													<td>$345,000</td>
-												</tr>
-												<tr>
-													<td>Yuri Berry</td>
-													<td>Chief Marketing Officer (CMO)</td>
-													<td>New York</td>
-													<td>40</td>
-													<td>2009/06/25</td>
-													<td>$675,000</td>
-												</tr>
-												<tr>
-													<td>Caesar Vance</td>
-													<td>Pre-Sales Support</td>
-													<td>New York</td>
-													<td>21</td>
-													<td>2011/12/12</td>
-													<td>$106,450</td>
-												</tr>
-												<tr>
-													<td>Doris Wilder</td>
-													<td>Sales Assistant</td>
-													<td>Sidney</td>
-													<td>23</td>
-													<td>2010/09/20</td>
-													<td>$85,600</td>
-												</tr>
-												<tr>
-													<td>Angelica Ramos</td>
-													<td>Chief Executive Officer (CEO)</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2009/10/09</td>
-													<td>$1,200,000</td>
-												</tr>
-												<tr>
-													<td>Gavin Joyce</td>
-													<td>Developer</td>
-													<td>Edinburgh</td>
-													<td>42</td>
-													<td>2010/12/22</td>
-													<td>$92,575</td>
-												</tr>
-												<tr>
-													<td>Jennifer Chang</td>
-													<td>Regional Director</td>
-													<td>Singapore</td>
-													<td>28</td>
-													<td>2010/11/14</td>
-													<td>$357,650</td>
-												</tr>
-												<tr>
-													<td>Brenden Wagner</td>
-													<td>Software Engineer</td>
-													<td>San Francisco</td>
-													<td>28</td>
-													<td>2011/06/07</td>
-													<td>$206,850</td>
-												</tr>
-												<tr>
-													<td>Fiona Green</td>
-													<td>Chief Operating Officer (COO)</td>
-													<td>San Francisco</td>
-													<td>48</td>
-													<td>2010/03/11</td>
-													<td>$850,000</td>
-												</tr>
-												<tr>
-													<td>Shou Itou</td>
-													<td>Regional Marketing</td>
-													<td>Tokyo</td>
-													<td>20</td>
-													<td>2011/08/14</td>
-													<td>$163,000</td>
-												</tr>
-												<tr>
-													<td>Michelle House</td>
-													<td>Integration Specialist</td>
-													<td>Sidney</td>
-													<td>37</td>
-													<td>2011/06/02</td>
-													<td>$95,400</td>
-												</tr>
-												<tr>
-													<td>Suki Burks</td>
-													<td>Developer</td>
-													<td>London</td>
-													<td>53</td>
-													<td>2009/10/22</td>
-													<td>$114,500</td>
-												</tr>
-												<tr>
-													<td>Prescott Bartlett</td>
-													<td>Technical Author</td>
-													<td>London</td>
-													<td>27</td>
-													<td>2011/05/07</td>
-													<td>$145,000</td>
-												</tr>
-												<tr>
-													<td>Gavin Cortez</td>
-													<td>Team Leader</td>
-													<td>San Francisco</td>
-													<td>22</td>
-													<td>2008/10/26</td>
-													<td>$235,500</td>
-												</tr>
-												<tr>
-													<td>Martena Mccray</td>
-													<td>Post-Sales support</td>
-													<td>Edinburgh</td>
-													<td>46</td>
-													<td>2011/03/09</td>
-													<td>$324,050</td>
-												</tr>
-												<tr>
-													<td>Unity Butler</td>
-													<td>Marketing Designer</td>
-													<td>San Francisco</td>
-													<td>47</td>
-													<td>2009/12/09</td>
-													<td>$85,675</td>
-												</tr>
-												<tr>
-													<td>Howard Hatfield</td>
-													<td>Office Manager</td>
-													<td>San Francisco</td>
-													<td>51</td>
-													<td>2008/12/16</td>
-													<td>$164,500</td>
-												</tr>
-												<tr>
-													<td>Hope Fuentes</td>
-													<td>Secretary</td>
-													<td>San Francisco</td>
-													<td>41</td>
-													<td>2010/02/12</td>
-													<td>$109,850</td>
-												</tr>
-												<tr>
-													<td>Vivian Harrell</td>
-													<td>Financial Controller</td>
-													<td>San Francisco</td>
-													<td>62</td>
-													<td>2009/02/14</td>
-													<td>$452,500</td>
-												</tr>
-												<tr>
-													<td>Timothy Mooney</td>
-													<td>Office Manager</td>
-													<td>London</td>
-													<td>37</td>
-													<td>2008/12/11</td>
-													<td>$136,200</td>
-												</tr>
-												<tr>
-													<td>Jackson Bradshaw</td>
-													<td>Director</td>
-													<td>New York</td>
-													<td>65</td>
-													<td>2008/09/26</td>
-													<td>$645,750</td>
-												</tr>
-												<tr>
-													<td>Olivia Liang</td>
-													<td>Support Engineer</td>
-													<td>Singapore</td>
-													<td>64</td>
-													<td>2011/02/03</td>
-													<td>$234,500</td>
-												</tr>
-												<tr>
-													<td>Bruno Nash</td>
-													<td>Software Engineer</td>
-													<td>London</td>
-													<td>38</td>
-													<td>2011/05/03</td>
-													<td>$163,500</td>
-												</tr>
-												<tr>
-													<td>Sakura Yamamoto</td>
-													<td>Support Engineer</td>
-													<td>Tokyo</td>
-													<td>37</td>
-													<td>2009/08/19</td>
-													<td>$139,575</td>
-												</tr>
-												<tr>
-													<td>Thor Walton</td>
-													<td>Developer</td>
-													<td>New York</td>
-													<td>61</td>
-													<td>2013/08/11</td>
-													<td>$98,540</td>
-												</tr>
-												<tr>
-													<td>Finn Camacho</td>
-													<td>Support Engineer</td>
-													<td>San Francisco</td>
-													<td>47</td>
-													<td>2009/07/07</td>
-													<td>$87,500</td>
-												</tr>
-												<tr>
-													<td>Serge Baldwin</td>
-													<td>Data Coordinator</td>
-													<td>Singapore</td>
-													<td>64</td>
-													<td>2012/04/09</td>
-													<td>$138,575</td>
-												</tr>
-												<tr>
-													<td>Zenaida Frank</td>
-													<td>Software Engineer</td>
-													<td>New York</td>
-													<td>63</td>
-													<td>2010/01/04</td>
-													<td>$125,250</td>
-												</tr>
-												<tr>
-													<td>Zorita Serrano</td>
-													<td>Software Engineer</td>
-													<td>San Francisco</td>
-													<td>56</td>
-													<td>2012/06/01</td>
-													<td>$115,000</td>
-												</tr>
-												<tr>
-													<td>Jennifer Acosta</td>
-													<td>Junior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>43</td>
-													<td>2013/02/01</td>
-													<td>$75,650</td>
-												</tr>
-												<tr>
-													<td>Cara Stevens</td>
-													<td>Sales Assistant</td>
-													<td>New York</td>
-													<td>46</td>
-													<td>2011/12/06</td>
-													<td>$145,600</td>
-												</tr>
-												<tr>
-													<td>Hermione Butler</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2011/03/21</td>
-													<td>$356,250</td>
-												</tr>
-												<tr>
-													<td>Lael Greer</td>
-													<td>Systems Administrator</td>
-													<td>London</td>
-													<td>21</td>
-													<td>2009/02/27</td>
-													<td>$103,500</td>
-												</tr>
-												<tr>
-													<td>Jonas Alexander</td>
-													<td>Developer</td>
-													<td>San Francisco</td>
-													<td>30</td>
-													<td>2010/07/14</td>
-													<td>$86,500</td>
-												</tr>
-												<tr>
-													<td>Shad Decker</td>
-													<td>Regional Director</td>
-													<td>Edinburgh</td>
-													<td>51</td>
-													<td>2008/11/13</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Michael Bruce</td>
-													<td>Javascript Developer</td>
-													<td>Singapore</td>
-													<td>29</td>
-													<td>2011/06/27</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Donna Snider</td>
-													<td>Customer Support</td>
-													<td>New York</td>
-													<td>27</td>
-													<td>2011/01/25</td>
-													<td>$112,000</td>
+													<td><input type="checkbox"/></td>
+													<td>171</td>
+													<td>57</td>
+													<td>테테테</td>
+													<td>278</td>
+													<td></td>
+													<td>ㅁㄴㅇㄹ</td>
+													<td></td>
+													<td>Y</td>
+													<td>1</td>
+													<td></td>
 												</tr>
 											</tbody>
 										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Row ends -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-sm-12">
-								<div class="card">
-									<div class="card-header">Vertical Scroll</div>
-									<div class="card-body">
-										<table id="scrollVertical" class="table table-striped table-bordered">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Position</th>
-													<th>Office</th>
-													<th>Age</th>
-													<th>Start date</th>
-													<th>Salary</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Tiger Nixon</td>
-													<td>System Architect</td>
-													<td>Edinburgh</td>
-													<td>61</td>
-													<td>2011/04/25</td>
-													<td>$320,800</td>
-												</tr>
-												<tr>
-													<td>Garrett Winters</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>63</td>
-													<td>2011/07/25</td>
-													<td>$170,750</td>
-												</tr>
-												<tr>
-													<td>Ashton Cox</td>
-													<td>Junior Technical Author</td>
-													<td>San Francisco</td>
-													<td>66</td>
-													<td>2009/01/12</td>
-													<td>$86,000</td>
-												</tr>
-												<tr>
-													<td>Cedric Kelly</td>
-													<td>Senior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>22</td>
-													<td>2012/03/29</td>
-													<td>$433,060</td>
-												</tr>
-												<tr>
-													<td>Airi Satou</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>33</td>
-													<td>2008/11/28</td>
-													<td>$162,700</td>
-												</tr>
-												<tr>
-													<td>Brielle Williamson</td>
-													<td>Integration Specialist</td>
-													<td>New York</td>
-													<td>61</td>
-													<td>2012/12/02</td>
-													<td>$372,000</td>
-												</tr>
-												<tr>
-													<td>Herrod Chandler</td>
-													<td>Sales Assistant</td>
-													<td>San Francisco</td>
-													<td>59</td>
-													<td>2012/08/06</td>
-													<td>$137,500</td>
-												</tr>
-												<tr>
-													<td>Rhona Davidson</td>
-													<td>Integration Specialist</td>
-													<td>Tokyo</td>
-													<td>55</td>
-													<td>2010/10/14</td>
-													<td>$327,900</td>
-												</tr>
-												<tr>
-													<td>Colleen Hurst</td>
-													<td>Javascript Developer</td>
-													<td>San Francisco</td>
-													<td>39</td>
-													<td>2009/09/15</td>
-													<td>$205,500</td>
-												</tr>
-												<tr>
-													<td>Sonya Frost</td>
-													<td>Software Engineer</td>
-													<td>Edinburgh</td>
-													<td>23</td>
-													<td>2008/12/13</td>
-													<td>$103,600</td>
-												</tr>
-												<tr>
-													<td>Jena Gaines</td>
-													<td>Office Manager</td>
-													<td>London</td>
-													<td>30</td>
-													<td>2008/12/19</td>
-													<td>$90,560</td>
-												</tr>
-												<tr>
-													<td>Quinn Flynn</td>
-													<td>Support Lead</td>
-													<td>Edinburgh</td>
-													<td>22</td>
-													<td>2013/03/03</td>
-													<td>$342,000</td>
-												</tr>
-												<tr>
-													<td>Charde Marshall</td>
-													<td>Regional Director</td>
-													<td>San Francisco</td>
-													<td>36</td>
-													<td>2008/10/16</td>
-													<td>$470,600</td>
-												</tr>
-												<tr>
-													<td>Haley Kennedy</td>
-													<td>Senior Marketing Designer</td>
-													<td>London</td>
-													<td>43</td>
-													<td>2012/12/18</td>
-													<td>$313,500</td>
-												</tr>
-												<tr>
-													<td>Tatyana Fitzpatrick</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>19</td>
-													<td>2010/03/17</td>
-													<td>$385,750</td>
-												</tr>
-												<tr>
-													<td>Michael Silva</td>
-													<td>Marketing Designer</td>
-													<td>London</td>
-													<td>66</td>
-													<td>2012/11/27</td>
-													<td>$198,500</td>
-												</tr>
-												<tr>
-													<td>Paul Byrd</td>
-													<td>Chief Financial Officer (CFO)</td>
-													<td>New York</td>
-													<td>64</td>
-													<td>2010/06/09</td>
-													<td>$725,000</td>
-												</tr>
-												<tr>
-													<td>Gloria Little</td>
-													<td>Systems Administrator</td>
-													<td>New York</td>
-													<td>59</td>
-													<td>2009/04/10</td>
-													<td>$237,500</td>
-												</tr>
-												<tr>
-													<td>Bradley Greer</td>
-													<td>Software Engineer</td>
-													<td>London</td>
-													<td>41</td>
-													<td>2012/10/13</td>
-													<td>$132,000</td>
-												</tr>
-												<tr>
-													<td>Dai Rios</td>
-													<td>Personnel Lead</td>
-													<td>Edinburgh</td>
-													<td>35</td>
-													<td>2012/09/26</td>
-													<td>$217,500</td>
-												</tr>
-												<tr>
-													<td>Jenette Caldwell</td>
-													<td>Development Lead</td>
-													<td>New York</td>
-													<td>30</td>
-													<td>2011/09/03</td>
-													<td>$345,000</td>
-												</tr>
-												<tr>
-													<td>Yuri Berry</td>
-													<td>Chief Marketing Officer (CMO)</td>
-													<td>New York</td>
-													<td>40</td>
-													<td>2009/06/25</td>
-													<td>$675,000</td>
-												</tr>
-												<tr>
-													<td>Caesar Vance</td>
-													<td>Pre-Sales Support</td>
-													<td>New York</td>
-													<td>21</td>
-													<td>2011/12/12</td>
-													<td>$106,450</td>
-												</tr>
-												<tr>
-													<td>Doris Wilder</td>
-													<td>Sales Assistant</td>
-													<td>Sidney</td>
-													<td>23</td>
-													<td>2010/09/20</td>
-													<td>$85,600</td>
-												</tr>
-												<tr>
-													<td>Angelica Ramos</td>
-													<td>Chief Executive Officer (CEO)</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2009/10/09</td>
-													<td>$1,200,000</td>
-												</tr>
-												<tr>
-													<td>Gavin Joyce</td>
-													<td>Developer</td>
-													<td>Edinburgh</td>
-													<td>42</td>
-													<td>2010/12/22</td>
-													<td>$92,575</td>
-												</tr>
-												<tr>
-													<td>Jennifer Chang</td>
-													<td>Regional Director</td>
-													<td>Singapore</td>
-													<td>28</td>
-													<td>2010/11/14</td>
-													<td>$357,650</td>
-												</tr>
-												<tr>
-													<td>Brenden Wagner</td>
-													<td>Software Engineer</td>
-													<td>San Francisco</td>
-													<td>28</td>
-													<td>2011/06/07</td>
-													<td>$206,850</td>
-												</tr>
-												<tr>
-													<td>Fiona Green</td>
-													<td>Chief Operating Officer (COO)</td>
-													<td>San Francisco</td>
-													<td>48</td>
-													<td>2010/03/11</td>
-													<td>$850,000</td>
-												</tr>
-												<tr>
-													<td>Shou Itou</td>
-													<td>Regional Marketing</td>
-													<td>Tokyo</td>
-													<td>20</td>
-													<td>2011/08/14</td>
-													<td>$163,000</td>
-												</tr>
-												<tr>
-													<td>Michelle House</td>
-													<td>Integration Specialist</td>
-													<td>Sidney</td>
-													<td>37</td>
-													<td>2011/06/02</td>
-													<td>$95,400</td>
-												</tr>
-												<tr>
-													<td>Suki Burks</td>
-													<td>Developer</td>
-													<td>London</td>
-													<td>53</td>
-													<td>2009/10/22</td>
-													<td>$114,500</td>
-												</tr>
-												<tr>
-													<td>Prescott Bartlett</td>
-													<td>Technical Author</td>
-													<td>London</td>
-													<td>27</td>
-													<td>2011/05/07</td>
-													<td>$145,000</td>
-												</tr>
-												<tr>
-													<td>Gavin Cortez</td>
-													<td>Team Leader</td>
-													<td>San Francisco</td>
-													<td>22</td>
-													<td>2008/10/26</td>
-													<td>$235,500</td>
-												</tr>
-												<tr>
-													<td>Martena Mccray</td>
-													<td>Post-Sales support</td>
-													<td>Edinburgh</td>
-													<td>46</td>
-													<td>2011/03/09</td>
-													<td>$324,050</td>
-												</tr>
-												<tr>
-													<td>Unity Butler</td>
-													<td>Marketing Designer</td>
-													<td>San Francisco</td>
-													<td>47</td>
-													<td>2009/12/09</td>
-													<td>$85,675</td>
-												</tr>
-												<tr>
-													<td>Howard Hatfield</td>
-													<td>Office Manager</td>
-													<td>San Francisco</td>
-													<td>51</td>
-													<td>2008/12/16</td>
-													<td>$164,500</td>
-												</tr>
-												<tr>
-													<td>Hope Fuentes</td>
-													<td>Secretary</td>
-													<td>San Francisco</td>
-													<td>41</td>
-													<td>2010/02/12</td>
-													<td>$109,850</td>
-												</tr>
-												<tr>
-													<td>Vivian Harrell</td>
-													<td>Financial Controller</td>
-													<td>San Francisco</td>
-													<td>62</td>
-													<td>2009/02/14</td>
-													<td>$452,500</td>
-												</tr>
-												<tr>
-													<td>Timothy Mooney</td>
-													<td>Office Manager</td>
-													<td>London</td>
-													<td>37</td>
-													<td>2008/12/11</td>
-													<td>$136,200</td>
-												</tr>
-												<tr>
-													<td>Jackson Bradshaw</td>
-													<td>Director</td>
-													<td>New York</td>
-													<td>65</td>
-													<td>2008/09/26</td>
-													<td>$645,750</td>
-												</tr>
-												<tr>
-													<td>Olivia Liang</td>
-													<td>Support Engineer</td>
-													<td>Singapore</td>
-													<td>64</td>
-													<td>2011/02/03</td>
-													<td>$234,500</td>
-												</tr>
-												<tr>
-													<td>Bruno Nash</td>
-													<td>Software Engineer</td>
-													<td>London</td>
-													<td>38</td>
-													<td>2011/05/03</td>
-													<td>$163,500</td>
-												</tr>
-												<tr>
-													<td>Sakura Yamamoto</td>
-													<td>Support Engineer</td>
-													<td>Tokyo</td>
-													<td>37</td>
-													<td>2009/08/19</td>
-													<td>$139,575</td>
-												</tr>
-												<tr>
-													<td>Thor Walton</td>
-													<td>Developer</td>
-													<td>New York</td>
-													<td>61</td>
-													<td>2013/08/11</td>
-													<td>$98,540</td>
-												</tr>
-												<tr>
-													<td>Finn Camacho</td>
-													<td>Support Engineer</td>
-													<td>San Francisco</td>
-													<td>47</td>
-													<td>2009/07/07</td>
-													<td>$87,500</td>
-												</tr>
-												<tr>
-													<td>Serge Baldwin</td>
-													<td>Data Coordinator</td>
-													<td>Singapore</td>
-													<td>64</td>
-													<td>2012/04/09</td>
-													<td>$138,575</td>
-												</tr>
-												<tr>
-													<td>Zenaida Frank</td>
-													<td>Software Engineer</td>
-													<td>New York</td>
-													<td>63</td>
-													<td>2010/01/04</td>
-													<td>$125,250</td>
-												</tr>
-												<tr>
-													<td>Zorita Serrano</td>
-													<td>Software Engineer</td>
-													<td>San Francisco</td>
-													<td>56</td>
-													<td>2012/06/01</td>
-													<td>$115,000</td>
-												</tr>
-												<tr>
-													<td>Jennifer Acosta</td>
-													<td>Junior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>43</td>
-													<td>2013/02/01</td>
-													<td>$75,650</td>
-												</tr>
-												<tr>
-													<td>Cara Stevens</td>
-													<td>Sales Assistant</td>
-													<td>New York</td>
-													<td>46</td>
-													<td>2011/12/06</td>
-													<td>$145,600</td>
-												</tr>
-												<tr>
-													<td>Hermione Butler</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2011/03/21</td>
-													<td>$356,250</td>
-												</tr>
-												<tr>
-													<td>Lael Greer</td>
-													<td>Systems Administrator</td>
-													<td>London</td>
-													<td>21</td>
-													<td>2009/02/27</td>
-													<td>$103,500</td>
-												</tr>
-												<tr>
-													<td>Jonas Alexander</td>
-													<td>Developer</td>
-													<td>San Francisco</td>
-													<td>30</td>
-													<td>2010/07/14</td>
-													<td>$86,500</td>
-												</tr>
-												<tr>
-													<td>Shad Decker</td>
-													<td>Regional Director</td>
-													<td>Edinburgh</td>
-													<td>51</td>
-													<td>2008/11/13</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Michael Bruce</td>
-													<td>Javascript Developer</td>
-													<td>Singapore</td>
-													<td>29</td>
-													<td>2011/06/27</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Donna Snider</td>
-													<td>Customer Support</td>
-													<td>New York</td>
-													<td>27</td>
-													<td>2011/01/25</td>
-													<td>$112,000</td>
-												</tr>
-											</tbody>
+										<table>
+											<th>
+												<td></td>
+											    <td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											    <td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											    <td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											    <td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											    <td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											    <td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td><td></td>
+											    <td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td><td></td>
+											    <td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td><td></td>
+											    <td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td><td></td>
+											    <td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											    <td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											    <td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												    <td>
+														<ul class="pagination justify-content-right">
+															<li class="page-item disabled">
+											
+																<span class="page-link">Prev</span>
+															</li>
+															<li class="page-item">
+																<a class="page-link" href="#">1</a>
+															</li>
+															<li class="page-item active">
+																<a href="#" class="page-link">2</a>
+															</li>
+															</li>
+															<li class="page-item">
+																<a class="page-link" href="#">3</a>
+															</li>
+															<li class="page-item active">
+																<a href="#" class="page-link">4</a>
+															</li>
+															</li>
+															<li class="page-item">
+																<a class="page-link" href="#">5</a>
+															</li>
+															<li class="page-item active">
+																<a href="#" class="page-link">6</a>
+															</li>
+															<li class="page-item">
+																<a class="page-link" href="#">7</a>
+															</li>
+															<li class="page-item active">
+																<a href="#" class="page-link">8</a>
+															</li>
+															<li class="page-item">
+																<a class="page-link" href="#">9</a>
+															</li>
+															<li class="page-item active">
+																<a href="#" class="page-link">10</a>
+															</li>
+															</li>
+															<li class="page-item">
+																<a class="page-link" href="#">11</a>
+															</li>
+															<li class="page-item active">
+																<a href="#" class="page-link">12</a>
+															</li>
+															<li class="page-item">
+																<a class="page-link" href="#">Next</a>
+															</li>
+														</ul>
+													</td>
+											</th>		
 										</table>
 									</div>
 								</div>
-							</div>
+						    </div>
 						</div>
 						<!-- Row ends -->
-
 						<!-- Row start -->
 						<div class="row gutters">
 							<div class="col-sm-12">
-								<div class="card">
-									<div class="card-header">Row Selection</div>
-									<div class="card-body">
-										<table id="rowSelection" class="table table-striped table-bordered">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Position</th>
-													<th>Office</th>
-													<th>Age</th>
-													<th>Start date</th>
-													<th>Salary</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Tiger Nixon</td>
-													<td>System Architect</td>
-													<td>Edinburgh</td>
-													<td>61</td>
-													<td>2011/04/25</td>
-													<td>$320,800</td>
-												</tr>
-												<tr>
-													<td>Garrett Winters</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>63</td>
-													<td>2011/07/25</td>
-													<td>$170,750</td>
-												</tr>
-												<tr>
-													<td>Ashton Cox</td>
-													<td>Junior Technical Author</td>
-													<td>San Francisco</td>
-													<td>66</td>
-													<td>2009/01/12</td>
-													<td>$86,000</td>
-												</tr>
-												<tr>
-													<td>Cedric Kelly</td>
-													<td>Senior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>22</td>
-													<td>2012/03/29</td>
-													<td>$433,060</td>
-												</tr>
-												<tr>
-													<td>Airi Satou</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>33</td>
-													<td>2008/11/28</td>
-													<td>$162,700</td>
-												</tr>
-												<tr>
-													<td>Brielle Williamson</td>
-													<td>Integration Specialist</td>
-													<td>New York</td>
-													<td>61</td>
-													<td>2012/12/02</td>
-													<td>$372,000</td>
-												</tr>
-												<tr>
-													<td>Herrod Chandler</td>
-													<td>Sales Assistant</td>
-													<td>San Francisco</td>
-													<td>59</td>
-													<td>2012/08/06</td>
-													<td>$137,500</td>
-												</tr>
-												<tr>
-													<td>Rhona Davidson</td>
-													<td>Integration Specialist</td>
-													<td>Tokyo</td>
-													<td>55</td>
-													<td>2010/10/14</td>
-													<td>$327,900</td>
-												</tr>
-												<tr>
-													<td>Colleen Hurst</td>
-													<td>Javascript Developer</td>
-													<td>San Francisco</td>
-													<td>39</td>
-													<td>2009/09/15</td>
-													<td>$205,500</td>
-												</tr>
-												<tr>
-													<td>Sonya Frost</td>
-													<td>Software Engineer</td>
-													<td>Edinburgh</td>
-													<td>23</td>
-													<td>2008/12/13</td>
-													<td>$103,600</td>
-												</tr>
-												<tr>
-													<td>Jena Gaines</td>
-													<td>Office Manager</td>
-													<td>London</td>
-													<td>30</td>
-													<td>2008/12/19</td>
-													<td>$90,560</td>
-												</tr>
-												<tr>
-													<td>Quinn Flynn</td>
-													<td>Support Lead</td>
-													<td>Edinburgh</td>
-													<td>22</td>
-													<td>2013/03/03</td>
-													<td>$342,000</td>
-												</tr>
-												<tr>
-													<td>Charde Marshall</td>
-													<td>Regional Director</td>
-													<td>San Francisco</td>
-													<td>36</td>
-													<td>2008/10/16</td>
-													<td>$470,600</td>
-												</tr>
-												<tr>
-													<td>Haley Kennedy</td>
-													<td>Senior Marketing Designer</td>
-													<td>London</td>
-													<td>43</td>
-													<td>2012/12/18</td>
-													<td>$313,500</td>
-												</tr>
-												<tr>
-													<td>Tatyana Fitzpatrick</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>19</td>
-													<td>2010/03/17</td>
-													<td>$385,750</td>
-												</tr>
-												<tr>
-													<td>Michael Silva</td>
-													<td>Marketing Designer</td>
-													<td>London</td>
-													<td>66</td>
-													<td>2012/11/27</td>
-													<td>$198,500</td>
-												</tr>
-												<tr>
-													<td>Paul Byrd</td>
-													<td>Chief Financial Officer (CFO)</td>
-													<td>New York</td>
-													<td>64</td>
-													<td>2010/06/09</td>
-													<td>$725,000</td>
-												</tr>
-												<tr>
-													<td>Gloria Little</td>
-													<td>Systems Administrator</td>
-													<td>New York</td>
-													<td>59</td>
-													<td>2009/04/10</td>
-													<td>$237,500</td>
-												</tr>
-												<tr>
-													<td>Bradley Greer</td>
-													<td>Software Engineer</td>
-													<td>London</td>
-													<td>41</td>
-													<td>2012/10/13</td>
-													<td>$132,000</td>
-												</tr>
-												<tr>
-													<td>Dai Rios</td>
-													<td>Personnel Lead</td>
-													<td>Edinburgh</td>
-													<td>35</td>
-													<td>2012/09/26</td>
-													<td>$217,500</td>
-												</tr>
-												<tr>
-													<td>Jenette Caldwell</td>
-													<td>Development Lead</td>
-													<td>New York</td>
-													<td>30</td>
-													<td>2011/09/03</td>
-													<td>$345,000</td>
-												</tr>
-												<tr>
-													<td>Yuri Berry</td>
-													<td>Chief Marketing Officer (CMO)</td>
-													<td>New York</td>
-													<td>40</td>
-													<td>2009/06/25</td>
-													<td>$675,000</td>
-												</tr>
-												<tr>
-													<td>Caesar Vance</td>
-													<td>Pre-Sales Support</td>
-													<td>New York</td>
-													<td>21</td>
-													<td>2011/12/12</td>
-													<td>$106,450</td>
-												</tr>
-												<tr>
-													<td>Doris Wilder</td>
-													<td>Sales Assistant</td>
-													<td>Sidney</td>
-													<td>23</td>
-													<td>2010/09/20</td>
-													<td>$85,600</td>
-												</tr>
-												<tr>
-													<td>Angelica Ramos</td>
-													<td>Chief Executive Officer (CEO)</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2009/10/09</td>
-													<td>$1,200,000</td>
-												</tr>
-												<tr>
-													<td>Gavin Joyce</td>
-													<td>Developer</td>
-													<td>Edinburgh</td>
-													<td>42</td>
-													<td>2010/12/22</td>
-													<td>$92,575</td>
-												</tr>
-												<tr>
-													<td>Jennifer Chang</td>
-													<td>Regional Director</td>
-													<td>Singapore</td>
-													<td>28</td>
-													<td>2010/11/14</td>
-													<td>$357,650</td>
-												</tr>
-												<tr>
-													<td>Brenden Wagner</td>
-													<td>Software Engineer</td>
-													<td>San Francisco</td>
-													<td>28</td>
-													<td>2011/06/07</td>
-													<td>$206,850</td>
-												</tr>
-												<tr>
-													<td>Fiona Green</td>
-													<td>Chief Operating Officer (COO)</td>
-													<td>San Francisco</td>
-													<td>48</td>
-													<td>2010/03/11</td>
-													<td>$850,000</td>
-												</tr>
-												<tr>
-													<td>Shou Itou</td>
-													<td>Regional Marketing</td>
-													<td>Tokyo</td>
-													<td>20</td>
-													<td>2011/08/14</td>
-													<td>$163,000</td>
-												</tr>
-												<tr>
-													<td>Michelle House</td>
-													<td>Integration Specialist</td>
-													<td>Sidney</td>
-													<td>37</td>
-													<td>2011/06/02</td>
-													<td>$95,400</td>
-												</tr>
-												<tr>
-													<td>Suki Burks</td>
-													<td>Developer</td>
-													<td>London</td>
-													<td>53</td>
-													<td>2009/10/22</td>
-													<td>$114,500</td>
-												</tr>
-												<tr>
-													<td>Prescott Bartlett</td>
-													<td>Technical Author</td>
-													<td>London</td>
-													<td>27</td>
-													<td>2011/05/07</td>
-													<td>$145,000</td>
-												</tr>
-												<tr>
-													<td>Gavin Cortez</td>
-													<td>Team Leader</td>
-													<td>San Francisco</td>
-													<td>22</td>
-													<td>2008/10/26</td>
-													<td>$235,500</td>
-												</tr>
-												<tr>
-													<td>Martena Mccray</td>
-													<td>Post-Sales support</td>
-													<td>Edinburgh</td>
-													<td>46</td>
-													<td>2011/03/09</td>
-													<td>$324,050</td>
-												</tr>
-												<tr>
-													<td>Unity Butler</td>
-													<td>Marketing Designer</td>
-													<td>San Francisco</td>
-													<td>47</td>
-													<td>2009/12/09</td>
-													<td>$85,675</td>
-												</tr>
-												<tr>
-													<td>Howard Hatfield</td>
-													<td>Office Manager</td>
-													<td>San Francisco</td>
-													<td>51</td>
-													<td>2008/12/16</td>
-													<td>$164,500</td>
-												</tr>
-												<tr>
-													<td>Hope Fuentes</td>
-													<td>Secretary</td>
-													<td>San Francisco</td>
-													<td>41</td>
-													<td>2010/02/12</td>
-													<td>$109,850</td>
-												</tr>
-												<tr>
-													<td>Vivian Harrell</td>
-													<td>Financial Controller</td>
-													<td>San Francisco</td>
-													<td>62</td>
-													<td>2009/02/14</td>
-													<td>$452,500</td>
-												</tr>
-												<tr>
-													<td>Timothy Mooney</td>
-													<td>Office Manager</td>
-													<td>London</td>
-													<td>37</td>
-													<td>2008/12/11</td>
-													<td>$136,200</td>
-												</tr>
-												<tr>
-													<td>Jackson Bradshaw</td>
-													<td>Director</td>
-													<td>New York</td>
-													<td>65</td>
-													<td>2008/09/26</td>
-													<td>$645,750</td>
-												</tr>
-												<tr>
-													<td>Olivia Liang</td>
-													<td>Support Engineer</td>
-													<td>Singapore</td>
-													<td>64</td>
-													<td>2011/02/03</td>
-													<td>$234,500</td>
-												</tr>
-												<tr>
-													<td>Bruno Nash</td>
-													<td>Software Engineer</td>
-													<td>London</td>
-													<td>38</td>
-													<td>2011/05/03</td>
-													<td>$163,500</td>
-												</tr>
-												<tr>
-													<td>Sakura Yamamoto</td>
-													<td>Support Engineer</td>
-													<td>Tokyo</td>
-													<td>37</td>
-													<td>2009/08/19</td>
-													<td>$139,575</td>
-												</tr>
-												<tr>
-													<td>Thor Walton</td>
-													<td>Developer</td>
-													<td>New York</td>
-													<td>61</td>
-													<td>2013/08/11</td>
-													<td>$98,540</td>
-												</tr>
-												<tr>
-													<td>Finn Camacho</td>
-													<td>Support Engineer</td>
-													<td>San Francisco</td>
-													<td>47</td>
-													<td>2009/07/07</td>
-													<td>$87,500</td>
-												</tr>
-												<tr>
-													<td>Serge Baldwin</td>
-													<td>Data Coordinator</td>
-													<td>Singapore</td>
-													<td>64</td>
-													<td>2012/04/09</td>
-													<td>$138,575</td>
-												</tr>
-												<tr>
-													<td>Zenaida Frank</td>
-													<td>Software Engineer</td>
-													<td>New York</td>
-													<td>63</td>
-													<td>2010/01/04</td>
-													<td>$125,250</td>
-												</tr>
-												<tr>
-													<td>Zorita Serrano</td>
-													<td>Software Engineer</td>
-													<td>San Francisco</td>
-													<td>56</td>
-													<td>2012/06/01</td>
-													<td>$115,000</td>
-												</tr>
-												<tr>
-													<td>Jennifer Acosta</td>
-													<td>Junior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>43</td>
-													<td>2013/02/01</td>
-													<td>$75,650</td>
-												</tr>
-												<tr>
-													<td>Cara Stevens</td>
-													<td>Sales Assistant</td>
-													<td>New York</td>
-													<td>46</td>
-													<td>2011/12/06</td>
-													<td>$145,600</td>
-												</tr>
-												<tr>
-													<td>Hermione Butler</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2011/03/21</td>
-													<td>$356,250</td>
-												</tr>
-												<tr>
-													<td>Lael Greer</td>
-													<td>Systems Administrator</td>
-													<td>London</td>
-													<td>21</td>
-													<td>2009/02/27</td>
-													<td>$103,500</td>
-												</tr>
-												<tr>
-													<td>Jonas Alexander</td>
-													<td>Developer</td>
-													<td>San Francisco</td>
-													<td>30</td>
-													<td>2010/07/14</td>
-													<td>$86,500</td>
-												</tr>
-												<tr>
-													<td>Shad Decker</td>
-													<td>Regional Director</td>
-													<td>Edinburgh</td>
-													<td>51</td>
-													<td>2008/11/13</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Michael Bruce</td>
-													<td>Javascript Developer</td>
-													<td>Singapore</td>
-													<td>29</td>
-													<td>2011/06/27</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Donna Snider</td>
-													<td>Customer Support</td>
-													<td>New York</td>
-													<td>27</td>
-													<td>2011/01/25</td>
-													<td>$112,000</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Row ends -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-sm-12">
-								<div class="card">
-									<div class="card-header">Highlighting Rows and Columns</div>
-									<div class="card-body">
-										<table id="highlightRowColumn" class="table table-striped table-bordered">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Position</th>
-													<th>Office</th>
-													<th>Age</th>
-													<th>Start date</th>
-													<th>Salary</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Tiger Nixon</td>
-													<td>System Architect</td>
-													<td>Edinburgh</td>
-													<td>61</td>
-													<td>2011/04/25</td>
-													<td>$320,800</td>
-												</tr>
-												<tr>
-													<td>Garrett Winters</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>63</td>
-													<td>2011/07/25</td>
-													<td>$170,750</td>
-												</tr>
-												<tr>
-													<td>Ashton Cox</td>
-													<td>Junior Technical Author</td>
-													<td>San Francisco</td>
-													<td>66</td>
-													<td>2009/01/12</td>
-													<td>$86,000</td>
-												</tr>
-												<tr>
-													<td>Cedric Kelly</td>
-													<td>Senior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>22</td>
-													<td>2012/03/29</td>
-													<td>$433,060</td>
-												</tr>
-												<tr>
-													<td>Airi Satou</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>33</td>
-													<td>2008/11/28</td>
-													<td>$162,700</td>
-												</tr>
-												<tr>
-													<td>Brielle Williamson</td>
-													<td>Integration Specialist</td>
-													<td>New York</td>
-													<td>61</td>
-													<td>2012/12/02</td>
-													<td>$372,000</td>
-												</tr>
-												<tr>
-													<td>Herrod Chandler</td>
-													<td>Sales Assistant</td>
-													<td>San Francisco</td>
-													<td>59</td>
-													<td>2012/08/06</td>
-													<td>$137,500</td>
-												</tr>
-												<tr>
-													<td>Rhona Davidson</td>
-													<td>Integration Specialist</td>
-													<td>Tokyo</td>
-													<td>55</td>
-													<td>2010/10/14</td>
-													<td>$327,900</td>
-												</tr>
-												<tr>
-													<td>Colleen Hurst</td>
-													<td>Javascript Developer</td>
-													<td>San Francisco</td>
-													<td>39</td>
-													<td>2009/09/15</td>
-													<td>$205,500</td>
-												</tr>
-												<tr>
-													<td>Sonya Frost</td>
-													<td>Software Engineer</td>
-													<td>Edinburgh</td>
-													<td>23</td>
-													<td>2008/12/13</td>
-													<td>$103,600</td>
-												</tr>
-												<tr>
-													<td>Jena Gaines</td>
-													<td>Office Manager</td>
-													<td>London</td>
-													<td>30</td>
-													<td>2008/12/19</td>
-													<td>$90,560</td>
-												</tr>
-												<tr>
-													<td>Quinn Flynn</td>
-													<td>Support Lead</td>
-													<td>Edinburgh</td>
-													<td>22</td>
-													<td>2013/03/03</td>
-													<td>$342,000</td>
-												</tr>
-												<tr>
-													<td>Charde Marshall</td>
-													<td>Regional Director</td>
-													<td>San Francisco</td>
-													<td>36</td>
-													<td>2008/10/16</td>
-													<td>$470,600</td>
-												</tr>
-												<tr>
-													<td>Haley Kennedy</td>
-													<td>Senior Marketing Designer</td>
-													<td>London</td>
-													<td>43</td>
-													<td>2012/12/18</td>
-													<td>$313,500</td>
-												</tr>
-												<tr>
-													<td>Tatyana Fitzpatrick</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>19</td>
-													<td>2010/03/17</td>
-													<td>$385,750</td>
-												</tr>
-												<tr>
-													<td>Michael Silva</td>
-													<td>Marketing Designer</td>
-													<td>London</td>
-													<td>66</td>
-													<td>2012/11/27</td>
-													<td>$198,500</td>
-												</tr>
-												<tr>
-													<td>Paul Byrd</td>
-													<td>Chief Financial Officer (CFO)</td>
-													<td>New York</td>
-													<td>64</td>
-													<td>2010/06/09</td>
-													<td>$725,000</td>
-												</tr>
-												<tr>
-													<td>Gloria Little</td>
-													<td>Systems Administrator</td>
-													<td>New York</td>
-													<td>59</td>
-													<td>2009/04/10</td>
-													<td>$237,500</td>
-												</tr>
-												<tr>
-													<td>Bradley Greer</td>
-													<td>Software Engineer</td>
-													<td>London</td>
-													<td>41</td>
-													<td>2012/10/13</td>
-													<td>$132,000</td>
-												</tr>
-												<tr>
-													<td>Dai Rios</td>
-													<td>Personnel Lead</td>
-													<td>Edinburgh</td>
-													<td>35</td>
-													<td>2012/09/26</td>
-													<td>$217,500</td>
-												</tr>
-												<tr>
-													<td>Jenette Caldwell</td>
-													<td>Development Lead</td>
-													<td>New York</td>
-													<td>30</td>
-													<td>2011/09/03</td>
-													<td>$345,000</td>
-												</tr>
-												<tr>
-													<td>Yuri Berry</td>
-													<td>Chief Marketing Officer (CMO)</td>
-													<td>New York</td>
-													<td>40</td>
-													<td>2009/06/25</td>
-													<td>$675,000</td>
-												</tr>
-												<tr>
-													<td>Caesar Vance</td>
-													<td>Pre-Sales Support</td>
-													<td>New York</td>
-													<td>21</td>
-													<td>2011/12/12</td>
-													<td>$106,450</td>
-												</tr>
-												<tr>
-													<td>Doris Wilder</td>
-													<td>Sales Assistant</td>
-													<td>Sidney</td>
-													<td>23</td>
-													<td>2010/09/20</td>
-													<td>$85,600</td>
-												</tr>
-												<tr>
-													<td>Angelica Ramos</td>
-													<td>Chief Executive Officer (CEO)</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2009/10/09</td>
-													<td>$1,200,000</td>
-												</tr>
-												<tr>
-													<td>Gavin Joyce</td>
-													<td>Developer</td>
-													<td>Edinburgh</td>
-													<td>42</td>
-													<td>2010/12/22</td>
-													<td>$92,575</td>
-												</tr>
-												<tr>
-													<td>Jennifer Chang</td>
-													<td>Regional Director</td>
-													<td>Singapore</td>
-													<td>28</td>
-													<td>2010/11/14</td>
-													<td>$357,650</td>
-												</tr>
-												<tr>
-													<td>Brenden Wagner</td>
-													<td>Software Engineer</td>
-													<td>San Francisco</td>
-													<td>28</td>
-													<td>2011/06/07</td>
-													<td>$206,850</td>
-												</tr>
-												<tr>
-													<td>Fiona Green</td>
-													<td>Chief Operating Officer (COO)</td>
-													<td>San Francisco</td>
-													<td>48</td>
-													<td>2010/03/11</td>
-													<td>$850,000</td>
-												</tr>
-												<tr>
-													<td>Shou Itou</td>
-													<td>Regional Marketing</td>
-													<td>Tokyo</td>
-													<td>20</td>
-													<td>2011/08/14</td>
-													<td>$163,000</td>
-												</tr>
-												<tr>
-													<td>Michelle House</td>
-													<td>Integration Specialist</td>
-													<td>Sidney</td>
-													<td>37</td>
-													<td>2011/06/02</td>
-													<td>$95,400</td>
-												</tr>
-												<tr>
-													<td>Suki Burks</td>
-													<td>Developer</td>
-													<td>London</td>
-													<td>53</td>
-													<td>2009/10/22</td>
-													<td>$114,500</td>
-												</tr>
-												<tr>
-													<td>Prescott Bartlett</td>
-													<td>Technical Author</td>
-													<td>London</td>
-													<td>27</td>
-													<td>2011/05/07</td>
-													<td>$145,000</td>
-												</tr>
-												<tr>
-													<td>Gavin Cortez</td>
-													<td>Team Leader</td>
-													<td>San Francisco</td>
-													<td>22</td>
-													<td>2008/10/26</td>
-													<td>$235,500</td>
-												</tr>
-												<tr>
-													<td>Martena Mccray</td>
-													<td>Post-Sales support</td>
-													<td>Edinburgh</td>
-													<td>46</td>
-													<td>2011/03/09</td>
-													<td>$324,050</td>
-												</tr>
-												<tr>
-													<td>Unity Butler</td>
-													<td>Marketing Designer</td>
-													<td>San Francisco</td>
-													<td>47</td>
-													<td>2009/12/09</td>
-													<td>$85,675</td>
-												</tr>
-												<tr>
-													<td>Howard Hatfield</td>
-													<td>Office Manager</td>
-													<td>San Francisco</td>
-													<td>51</td>
-													<td>2008/12/16</td>
-													<td>$164,500</td>
-												</tr>
-												<tr>
-													<td>Hope Fuentes</td>
-													<td>Secretary</td>
-													<td>San Francisco</td>
-													<td>41</td>
-													<td>2010/02/12</td>
-													<td>$109,850</td>
-												</tr>
-												<tr>
-													<td>Vivian Harrell</td>
-													<td>Financial Controller</td>
-													<td>San Francisco</td>
-													<td>62</td>
-													<td>2009/02/14</td>
-													<td>$452,500</td>
-												</tr>
-												<tr>
-													<td>Timothy Mooney</td>
-													<td>Office Manager</td>
-													<td>London</td>
-													<td>37</td>
-													<td>2008/12/11</td>
-													<td>$136,200</td>
-												</tr>
-												<tr>
-													<td>Jackson Bradshaw</td>
-													<td>Director</td>
-													<td>New York</td>
-													<td>65</td>
-													<td>2008/09/26</td>
-													<td>$645,750</td>
-												</tr>
-												<tr>
-													<td>Olivia Liang</td>
-													<td>Support Engineer</td>
-													<td>Singapore</td>
-													<td>64</td>
-													<td>2011/02/03</td>
-													<td>$234,500</td>
-												</tr>
-												<tr>
-													<td>Bruno Nash</td>
-													<td>Software Engineer</td>
-													<td>London</td>
-													<td>38</td>
-													<td>2011/05/03</td>
-													<td>$163,500</td>
-												</tr>
-												<tr>
-													<td>Sakura Yamamoto</td>
-													<td>Support Engineer</td>
-													<td>Tokyo</td>
-													<td>37</td>
-													<td>2009/08/19</td>
-													<td>$139,575</td>
-												</tr>
-												<tr>
-													<td>Thor Walton</td>
-													<td>Developer</td>
-													<td>New York</td>
-													<td>61</td>
-													<td>2013/08/11</td>
-													<td>$98,540</td>
-												</tr>
-												<tr>
-													<td>Finn Camacho</td>
-													<td>Support Engineer</td>
-													<td>San Francisco</td>
-													<td>47</td>
-													<td>2009/07/07</td>
-													<td>$87,500</td>
-												</tr>
-												<tr>
-													<td>Serge Baldwin</td>
-													<td>Data Coordinator</td>
-													<td>Singapore</td>
-													<td>64</td>
-													<td>2012/04/09</td>
-													<td>$138,575</td>
-												</tr>
-												<tr>
-													<td>Zenaida Frank</td>
-													<td>Software Engineer</td>
-													<td>New York</td>
-													<td>63</td>
-													<td>2010/01/04</td>
-													<td>$125,250</td>
-												</tr>
-												<tr>
-													<td>Zorita Serrano</td>
-													<td>Software Engineer</td>
-													<td>San Francisco</td>
-													<td>56</td>
-													<td>2012/06/01</td>
-													<td>$115,000</td>
-												</tr>
-												<tr>
-													<td>Jennifer Acosta</td>
-													<td>Junior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>43</td>
-													<td>2013/02/01</td>
-													<td>$75,650</td>
-												</tr>
-												<tr>
-													<td>Cara Stevens</td>
-													<td>Sales Assistant</td>
-													<td>New York</td>
-													<td>46</td>
-													<td>2011/12/06</td>
-													<td>$145,600</td>
-												</tr>
-												<tr>
-													<td>Hermione Butler</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2011/03/21</td>
-													<td>$356,250</td>
-												</tr>
-												<tr>
-													<td>Lael Greer</td>
-													<td>Systems Administrator</td>
-													<td>London</td>
-													<td>21</td>
-													<td>2009/02/27</td>
-													<td>$103,500</td>
-												</tr>
-												<tr>
-													<td>Jonas Alexander</td>
-													<td>Developer</td>
-													<td>San Francisco</td>
-													<td>30</td>
-													<td>2010/07/14</td>
-													<td>$86,500</td>
-												</tr>
-												<tr>
-													<td>Shad Decker</td>
-													<td>Regional Director</td>
-													<td>Edinburgh</td>
-													<td>51</td>
-													<td>2008/11/13</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Michael Bruce</td>
-													<td>Javascript Developer</td>
-													<td>Singapore</td>
-													<td>29</td>
-													<td>2011/06/27</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Donna Snider</td>
-													<td>Customer Support</td>
-													<td>New York</td>
-													<td>27</td>
-													<td>2011/01/25</td>
-													<td>$112,000</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Row ends -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-sm-12">
-								<div class="card">
-									<div class="card-header">Using API in Callbacks</div>
-									<div class="card-body">
-										<table id="apiCallbacks" class="table table-striped table-bordered">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Position</th>
-													<th>Office</th>
-													<th>Age</th>
-													<th>Start date</th>
-													<th>Salary</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Tiger Nixon</td>
-													<td>System Architect</td>
-													<td>Edinburgh</td>
-													<td>61</td>
-													<td>2011/04/25</td>
-													<td>$320,800</td>
-												</tr>
-												<tr>
-													<td>Garrett Winters</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>63</td>
-													<td>2011/07/25</td>
-													<td>$170,750</td>
-												</tr>
-												<tr>
-													<td>Ashton Cox</td>
-													<td>Junior Technical Author</td>
-													<td>San Francisco</td>
-													<td>66</td>
-													<td>2009/01/12</td>
-													<td>$86,000</td>
-												</tr>
-												<tr>
-													<td>Cedric Kelly</td>
-													<td>Senior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>22</td>
-													<td>2012/03/29</td>
-													<td>$433,060</td>
-												</tr>
-												<tr>
-													<td>Airi Satou</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>33</td>
-													<td>2008/11/28</td>
-													<td>$162,700</td>
-												</tr>
-												<tr>
-													<td>Brielle Williamson</td>
-													<td>Integration Specialist</td>
-													<td>New York</td>
-													<td>61</td>
-													<td>2012/12/02</td>
-													<td>$372,000</td>
-												</tr>
-												<tr>
-													<td>Herrod Chandler</td>
-													<td>Sales Assistant</td>
-													<td>San Francisco</td>
-													<td>59</td>
-													<td>2012/08/06</td>
-													<td>$137,500</td>
-												</tr>
-												<tr>
-													<td>Rhona Davidson</td>
-													<td>Integration Specialist</td>
-													<td>Tokyo</td>
-													<td>55</td>
-													<td>2010/10/14</td>
-													<td>$327,900</td>
-												</tr>
-												<tr>
-													<td>Colleen Hurst</td>
-													<td>Javascript Developer</td>
-													<td>San Francisco</td>
-													<td>39</td>
-													<td>2009/09/15</td>
-													<td>$205,500</td>
-												</tr>
-												<tr>
-													<td>Sonya Frost</td>
-													<td>Software Engineer</td>
-													<td>Edinburgh</td>
-													<td>23</td>
-													<td>2008/12/13</td>
-													<td>$103,600</td>
-												</tr>
-												<tr>
-													<td>Jena Gaines</td>
-													<td>Office Manager</td>
-													<td>London</td>
-													<td>30</td>
-													<td>2008/12/19</td>
-													<td>$90,560</td>
-												</tr>
-												<tr>
-													<td>Quinn Flynn</td>
-													<td>Support Lead</td>
-													<td>Edinburgh</td>
-													<td>22</td>
-													<td>2013/03/03</td>
-													<td>$342,000</td>
-												</tr>
-												<tr>
-													<td>Charde Marshall</td>
-													<td>Regional Director</td>
-													<td>San Francisco</td>
-													<td>36</td>
-													<td>2008/10/16</td>
-													<td>$470,600</td>
-												</tr>
-												<tr>
-													<td>Haley Kennedy</td>
-													<td>Senior Marketing Designer</td>
-													<td>London</td>
-													<td>43</td>
-													<td>2012/12/18</td>
-													<td>$313,500</td>
-												</tr>
-												<tr>
-													<td>Tatyana Fitzpatrick</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>19</td>
-													<td>2010/03/17</td>
-													<td>$385,750</td>
-												</tr>
-												<tr>
-													<td>Michael Silva</td>
-													<td>Marketing Designer</td>
-													<td>London</td>
-													<td>66</td>
-													<td>2012/11/27</td>
-													<td>$198,500</td>
-												</tr>
-												<tr>
-													<td>Paul Byrd</td>
-													<td>Chief Financial Officer (CFO)</td>
-													<td>New York</td>
-													<td>64</td>
-													<td>2010/06/09</td>
-													<td>$725,000</td>
-												</tr>
-												<tr>
-													<td>Gloria Little</td>
-													<td>Systems Administrator</td>
-													<td>New York</td>
-													<td>59</td>
-													<td>2009/04/10</td>
-													<td>$237,500</td>
-												</tr>
-												<tr>
-													<td>Bradley Greer</td>
-													<td>Software Engineer</td>
-													<td>London</td>
-													<td>41</td>
-													<td>2012/10/13</td>
-													<td>$132,000</td>
-												</tr>
-												<tr>
-													<td>Dai Rios</td>
-													<td>Personnel Lead</td>
-													<td>Edinburgh</td>
-													<td>35</td>
-													<td>2012/09/26</td>
-													<td>$217,500</td>
-												</tr>
-												<tr>
-													<td>Jenette Caldwell</td>
-													<td>Development Lead</td>
-													<td>New York</td>
-													<td>30</td>
-													<td>2011/09/03</td>
-													<td>$345,000</td>
-												</tr>
-												<tr>
-													<td>Yuri Berry</td>
-													<td>Chief Marketing Officer (CMO)</td>
-													<td>New York</td>
-													<td>40</td>
-													<td>2009/06/25</td>
-													<td>$675,000</td>
-												</tr>
-												<tr>
-													<td>Caesar Vance</td>
-													<td>Pre-Sales Support</td>
-													<td>New York</td>
-													<td>21</td>
-													<td>2011/12/12</td>
-													<td>$106,450</td>
-												</tr>
-												<tr>
-													<td>Doris Wilder</td>
-													<td>Sales Assistant</td>
-													<td>Sidney</td>
-													<td>23</td>
-													<td>2010/09/20</td>
-													<td>$85,600</td>
-												</tr>
-												<tr>
-													<td>Angelica Ramos</td>
-													<td>Chief Executive Officer (CEO)</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2009/10/09</td>
-													<td>$1,200,000</td>
-												</tr>
-												<tr>
-													<td>Gavin Joyce</td>
-													<td>Developer</td>
-													<td>Edinburgh</td>
-													<td>42</td>
-													<td>2010/12/22</td>
-													<td>$92,575</td>
-												</tr>
-												<tr>
-													<td>Jennifer Chang</td>
-													<td>Regional Director</td>
-													<td>Singapore</td>
-													<td>28</td>
-													<td>2010/11/14</td>
-													<td>$357,650</td>
-												</tr>
-												<tr>
-													<td>Brenden Wagner</td>
-													<td>Software Engineer</td>
-													<td>San Francisco</td>
-													<td>28</td>
-													<td>2011/06/07</td>
-													<td>$206,850</td>
-												</tr>
-												<tr>
-													<td>Fiona Green</td>
-													<td>Chief Operating Officer (COO)</td>
-													<td>San Francisco</td>
-													<td>48</td>
-													<td>2010/03/11</td>
-													<td>$850,000</td>
-												</tr>
-												<tr>
-													<td>Shou Itou</td>
-													<td>Regional Marketing</td>
-													<td>Tokyo</td>
-													<td>20</td>
-													<td>2011/08/14</td>
-													<td>$163,000</td>
-												</tr>
-												<tr>
-													<td>Michelle House</td>
-													<td>Integration Specialist</td>
-													<td>Sidney</td>
-													<td>37</td>
-													<td>2011/06/02</td>
-													<td>$95,400</td>
-												</tr>
-												<tr>
-													<td>Suki Burks</td>
-													<td>Developer</td>
-													<td>London</td>
-													<td>53</td>
-													<td>2009/10/22</td>
-													<td>$114,500</td>
-												</tr>
-												<tr>
-													<td>Prescott Bartlett</td>
-													<td>Technical Author</td>
-													<td>London</td>
-													<td>27</td>
-													<td>2011/05/07</td>
-													<td>$145,000</td>
-												</tr>
-												<tr>
-													<td>Gavin Cortez</td>
-													<td>Team Leader</td>
-													<td>San Francisco</td>
-													<td>22</td>
-													<td>2008/10/26</td>
-													<td>$235,500</td>
-												</tr>
-												<tr>
-													<td>Martena Mccray</td>
-													<td>Post-Sales support</td>
-													<td>Edinburgh</td>
-													<td>46</td>
-													<td>2011/03/09</td>
-													<td>$324,050</td>
-												</tr>
-												<tr>
-													<td>Unity Butler</td>
-													<td>Marketing Designer</td>
-													<td>San Francisco</td>
-													<td>47</td>
-													<td>2009/12/09</td>
-													<td>$85,675</td>
-												</tr>
-												<tr>
-													<td>Howard Hatfield</td>
-													<td>Office Manager</td>
-													<td>San Francisco</td>
-													<td>51</td>
-													<td>2008/12/16</td>
-													<td>$164,500</td>
-												</tr>
-												<tr>
-													<td>Hope Fuentes</td>
-													<td>Secretary</td>
-													<td>San Francisco</td>
-													<td>41</td>
-													<td>2010/02/12</td>
-													<td>$109,850</td>
-												</tr>
-												<tr>
-													<td>Vivian Harrell</td>
-													<td>Financial Controller</td>
-													<td>San Francisco</td>
-													<td>62</td>
-													<td>2009/02/14</td>
-													<td>$452,500</td>
-												</tr>
-												<tr>
-													<td>Timothy Mooney</td>
-													<td>Office Manager</td>
-													<td>London</td>
-													<td>37</td>
-													<td>2008/12/11</td>
-													<td>$136,200</td>
-												</tr>
-												<tr>
-													<td>Jackson Bradshaw</td>
-													<td>Director</td>
-													<td>New York</td>
-													<td>65</td>
-													<td>2008/09/26</td>
-													<td>$645,750</td>
-												</tr>
-												<tr>
-													<td>Olivia Liang</td>
-													<td>Support Engineer</td>
-													<td>Singapore</td>
-													<td>64</td>
-													<td>2011/02/03</td>
-													<td>$234,500</td>
-												</tr>
-												<tr>
-													<td>Bruno Nash</td>
-													<td>Software Engineer</td>
-													<td>London</td>
-													<td>38</td>
-													<td>2011/05/03</td>
-													<td>$163,500</td>
-												</tr>
-												<tr>
-													<td>Sakura Yamamoto</td>
-													<td>Support Engineer</td>
-													<td>Tokyo</td>
-													<td>37</td>
-													<td>2009/08/19</td>
-													<td>$139,575</td>
-												</tr>
-												<tr>
-													<td>Thor Walton</td>
-													<td>Developer</td>
-													<td>New York</td>
-													<td>61</td>
-													<td>2013/08/11</td>
-													<td>$98,540</td>
-												</tr>
-												<tr>
-													<td>Finn Camacho</td>
-													<td>Support Engineer</td>
-													<td>San Francisco</td>
-													<td>47</td>
-													<td>2009/07/07</td>
-													<td>$87,500</td>
-												</tr>
-												<tr>
-													<td>Serge Baldwin</td>
-													<td>Data Coordinator</td>
-													<td>Singapore</td>
-													<td>64</td>
-													<td>2012/04/09</td>
-													<td>$138,575</td>
-												</tr>
-												<tr>
-													<td>Zenaida Frank</td>
-													<td>Software Engineer</td>
-													<td>New York</td>
-													<td>63</td>
-													<td>2010/01/04</td>
-													<td>$125,250</td>
-												</tr>
-												<tr>
-													<td>Zorita Serrano</td>
-													<td>Software Engineer</td>
-													<td>San Francisco</td>
-													<td>56</td>
-													<td>2012/06/01</td>
-													<td>$115,000</td>
-												</tr>
-												<tr>
-													<td>Jennifer Acosta</td>
-													<td>Junior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>43</td>
-													<td>2013/02/01</td>
-													<td>$75,650</td>
-												</tr>
-												<tr>
-													<td>Cara Stevens</td>
-													<td>Sales Assistant</td>
-													<td>New York</td>
-													<td>46</td>
-													<td>2011/12/06</td>
-													<td>$145,600</td>
-												</tr>
-												<tr>
-													<td>Hermione Butler</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2011/03/21</td>
-													<td>$356,250</td>
-												</tr>
-												<tr>
-													<td>Lael Greer</td>
-													<td>Systems Administrator</td>
-													<td>London</td>
-													<td>21</td>
-													<td>2009/02/27</td>
-													<td>$103,500</td>
-												</tr>
-												<tr>
-													<td>Jonas Alexander</td>
-													<td>Developer</td>
-													<td>San Francisco</td>
-													<td>30</td>
-													<td>2010/07/14</td>
-													<td>$86,500</td>
-												</tr>
+								<table id="rowSelection" class="table table-striped table-bordered">
+									<tr>
+										<td>	
+											<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+												<button type="button" class="btn btn-primary">
+													<span class="icon-times-outline"></span>
+												</button>
+											</div>
+											<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+												<button type="button" class="btn btn-primary">
+													<span class="icon-bin"></span>
+												</button>
+											</div>
+											</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td>
+												<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+													
+												</div>
+												<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+													
+												</div>
+												<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+													
+												</div>
+											<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
 												
-											</tbody>
-										</table>
-									</div>
-								</div>
+											</div>
+											<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+												
+											</div>
+											<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+											
+											</div>
+											<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+												<button type="button" class="btn btn-primary">
+													<span class="icon-document-add"></span>
+												</button>
+											</div>
+											<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+												<button type="button" class="btn btn-primary">
+													<span class="icon-plus2"></span>
+												</button>
+											</div>
+										</td>
+									</tr>
+								</table>
 							</div>
 						</div>
 						<!-- Row ends -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-sm-12">
-								<div class="card">
-									<div class="card-header">Fixed Header</div>
-									<div class="card-body">
-										<table id="fixedHeader" class="table table-striped table-bordered">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Position</th>
-													<th>Office</th>
-													<th>Age</th>
-													<th>Start date</th>
-													<th>Salary</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Tiger Nixon</td>
-													<td>System Architect</td>
-													<td>Edinburgh</td>
-													<td>61</td>
-													<td>2011/04/25</td>
-													<td>$320,800</td>
-												</tr>
-												<tr>
-													<td>Garrett Winters</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>63</td>
-													<td>2011/07/25</td>
-													<td>$170,750</td>
-												</tr>
-												<tr>
-													<td>Ashton Cox</td>
-													<td>Junior Technical Author</td>
-													<td>San Francisco</td>
-													<td>66</td>
-													<td>2009/01/12</td>
-													<td>$86,000</td>
-												</tr>
-												<tr>
-													<td>Cedric Kelly</td>
-													<td>Senior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>22</td>
-													<td>2012/03/29</td>
-													<td>$433,060</td>
-												</tr>
-												<tr>
-													<td>Airi Satou</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>33</td>
-													<td>2008/11/28</td>
-													<td>$162,700</td>
-												</tr>
-												<tr>
-													<td>Brielle Williamson</td>
-													<td>Integration Specialist</td>
-													<td>New York</td>
-													<td>61</td>
-													<td>2012/12/02</td>
-													<td>$372,000</td>
-												</tr>
-												<tr>
-													<td>Herrod Chandler</td>
-													<td>Sales Assistant</td>
-													<td>San Francisco</td>
-													<td>59</td>
-													<td>2012/08/06</td>
-													<td>$137,500</td>
-												</tr>
-												<tr>
-													<td>Rhona Davidson</td>
-													<td>Integration Specialist</td>
-													<td>Tokyo</td>
-													<td>55</td>
-													<td>2010/10/14</td>
-													<td>$327,900</td>
-												</tr>
-												<tr>
-													<td>Colleen Hurst</td>
-													<td>Javascript Developer</td>
-													<td>San Francisco</td>
-													<td>39</td>
-													<td>2009/09/15</td>
-													<td>$205,500</td>
-												</tr>
-												<tr>
-													<td>Sonya Frost</td>
-													<td>Software Engineer</td>
-													<td>Edinburgh</td>
-													<td>23</td>
-													<td>2008/12/13</td>
-													<td>$103,600</td>
-												</tr>
-												<tr>
-													<td>Jena Gaines</td>
-													<td>Office Manager</td>
-													<td>London</td>
-													<td>30</td>
-													<td>2008/12/19</td>
-													<td>$90,560</td>
-												</tr>
-												<tr>
-													<td>Quinn Flynn</td>
-													<td>Support Lead</td>
-													<td>Edinburgh</td>
-													<td>22</td>
-													<td>2013/03/03</td>
-													<td>$342,000</td>
-												</tr>
-												<tr>
-													<td>Charde Marshall</td>
-													<td>Regional Director</td>
-													<td>San Francisco</td>
-													<td>36</td>
-													<td>2008/10/16</td>
-													<td>$470,600</td>
-												</tr>
-												<tr>
-													<td>Haley Kennedy</td>
-													<td>Senior Marketing Designer</td>
-													<td>London</td>
-													<td>43</td>
-													<td>2012/12/18</td>
-													<td>$313,500</td>
-												</tr>
-												<tr>
-													<td>Tatyana Fitzpatrick</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>19</td>
-													<td>2010/03/17</td>
-													<td>$385,750</td>
-												</tr>
-												<tr>
-													<td>Michael Silva</td>
-													<td>Marketing Designer</td>
-													<td>London</td>
-													<td>66</td>
-													<td>2012/11/27</td>
-													<td>$198,500</td>
-												</tr>
-												<tr>
-													<td>Paul Byrd</td>
-													<td>Chief Financial Officer (CFO)</td>
-													<td>New York</td>
-													<td>64</td>
-													<td>2010/06/09</td>
-													<td>$725,000</td>
-												</tr>
-												<tr>
-													<td>Gloria Little</td>
-													<td>Systems Administrator</td>
-													<td>New York</td>
-													<td>59</td>
-													<td>2009/04/10</td>
-													<td>$237,500</td>
-												</tr>
-												<tr>
-													<td>Bradley Greer</td>
-													<td>Software Engineer</td>
-													<td>London</td>
-													<td>41</td>
-													<td>2012/10/13</td>
-													<td>$132,000</td>
-												</tr>
-												<tr>
-													<td>Dai Rios</td>
-													<td>Personnel Lead</td>
-													<td>Edinburgh</td>
-													<td>35</td>
-													<td>2012/09/26</td>
-													<td>$217,500</td>
-												</tr>
-												<tr>
-													<td>Jenette Caldwell</td>
-													<td>Development Lead</td>
-													<td>New York</td>
-													<td>30</td>
-													<td>2011/09/03</td>
-													<td>$345,000</td>
-												</tr>
-												<tr>
-													<td>Yuri Berry</td>
-													<td>Chief Marketing Officer (CMO)</td>
-													<td>New York</td>
-													<td>40</td>
-													<td>2009/06/25</td>
-													<td>$675,000</td>
-												</tr>
-												<tr>
-													<td>Caesar Vance</td>
-													<td>Pre-Sales Support</td>
-													<td>New York</td>
-													<td>21</td>
-													<td>2011/12/12</td>
-													<td>$106,450</td>
-												</tr>
-												<tr>
-													<td>Doris Wilder</td>
-													<td>Sales Assistant</td>
-													<td>Sidney</td>
-													<td>23</td>
-													<td>2010/09/20</td>
-													<td>$85,600</td>
-												</tr>
-												<tr>
-													<td>Angelica Ramos</td>
-													<td>Chief Executive Officer (CEO)</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2009/10/09</td>
-													<td>$1,200,000</td>
-												</tr>
-												<tr>
-													<td>Gavin Joyce</td>
-													<td>Developer</td>
-													<td>Edinburgh</td>
-													<td>42</td>
-													<td>2010/12/22</td>
-													<td>$92,575</td>
-												</tr>
-												<tr>
-													<td>Jennifer Chang</td>
-													<td>Regional Director</td>
-													<td>Singapore</td>
-													<td>28</td>
-													<td>2010/11/14</td>
-													<td>$357,650</td>
-												</tr>
-												<tr>
-													<td>Brenden Wagner</td>
-													<td>Software Engineer</td>
-													<td>San Francisco</td>
-													<td>28</td>
-													<td>2011/06/07</td>
-													<td>$206,850</td>
-												</tr>
-												<tr>
-													<td>Fiona Green</td>
-													<td>Chief Operating Officer (COO)</td>
-													<td>San Francisco</td>
-													<td>48</td>
-													<td>2010/03/11</td>
-													<td>$850,000</td>
-												</tr>
-												<tr>
-													<td>Shou Itou</td>
-													<td>Regional Marketing</td>
-													<td>Tokyo</td>
-													<td>20</td>
-													<td>2011/08/14</td>
-													<td>$163,000</td>
-												</tr>
-												<tr>
-													<td>Michelle House</td>
-													<td>Integration Specialist</td>
-													<td>Sidney</td>
-													<td>37</td>
-													<td>2011/06/02</td>
-													<td>$95,400</td>
-												</tr>
-												<tr>
-													<td>Suki Burks</td>
-													<td>Developer</td>
-													<td>London</td>
-													<td>53</td>
-													<td>2009/10/22</td>
-													<td>$114,500</td>
-												</tr>
-												<tr>
-													<td>Prescott Bartlett</td>
-													<td>Technical Author</td>
-													<td>London</td>
-													<td>27</td>
-													<td>2011/05/07</td>
-													<td>$145,000</td>
-												</tr>
-												<tr>
-													<td>Gavin Cortez</td>
-													<td>Team Leader</td>
-													<td>San Francisco</td>
-													<td>22</td>
-													<td>2008/10/26</td>
-													<td>$235,500</td>
-												</tr>
-												<tr>
-													<td>Martena Mccray</td>
-													<td>Post-Sales support</td>
-													<td>Edinburgh</td>
-													<td>46</td>
-													<td>2011/03/09</td>
-													<td>$324,050</td>
-												</tr>
-												<tr>
-													<td>Unity Butler</td>
-													<td>Marketing Designer</td>
-													<td>San Francisco</td>
-													<td>47</td>
-													<td>2009/12/09</td>
-													<td>$85,675</td>
-												</tr>
-												<tr>
-													<td>Howard Hatfield</td>
-													<td>Office Manager</td>
-													<td>San Francisco</td>
-													<td>51</td>
-													<td>2008/12/16</td>
-													<td>$164,500</td>
-												</tr>
-												<tr>
-													<td>Hope Fuentes</td>
-													<td>Secretary</td>
-													<td>San Francisco</td>
-													<td>41</td>
-													<td>2010/02/12</td>
-													<td>$109,850</td>
-												</tr>
-												<tr>
-													<td>Vivian Harrell</td>
-													<td>Financial Controller</td>
-													<td>San Francisco</td>
-													<td>62</td>
-													<td>2009/02/14</td>
-													<td>$452,500</td>
-												</tr>
-												<tr>
-													<td>Timothy Mooney</td>
-													<td>Office Manager</td>
-													<td>London</td>
-													<td>37</td>
-													<td>2008/12/11</td>
-													<td>$136,200</td>
-												</tr>
-												<tr>
-													<td>Jackson Bradshaw</td>
-													<td>Director</td>
-													<td>New York</td>
-													<td>65</td>
-													<td>2008/09/26</td>
-													<td>$645,750</td>
-												</tr>
-												<tr>
-													<td>Olivia Liang</td>
-													<td>Support Engineer</td>
-													<td>Singapore</td>
-													<td>64</td>
-													<td>2011/02/03</td>
-													<td>$234,500</td>
-												</tr>
-												<tr>
-													<td>Bruno Nash</td>
-													<td>Software Engineer</td>
-													<td>London</td>
-													<td>38</td>
-													<td>2011/05/03</td>
-													<td>$163,500</td>
-												</tr>
-												<tr>
-													<td>Sakura Yamamoto</td>
-													<td>Support Engineer</td>
-													<td>Tokyo</td>
-													<td>37</td>
-													<td>2009/08/19</td>
-													<td>$139,575</td>
-												</tr>
-												<tr>
-													<td>Thor Walton</td>
-													<td>Developer</td>
-													<td>New York</td>
-													<td>61</td>
-													<td>2013/08/11</td>
-													<td>$98,540</td>
-												</tr>
-												<tr>
-													<td>Finn Camacho</td>
-													<td>Support Engineer</td>
-													<td>San Francisco</td>
-													<td>47</td>
-													<td>2009/07/07</td>
-													<td>$87,500</td>
-												</tr>
-												<tr>
-													<td>Serge Baldwin</td>
-													<td>Data Coordinator</td>
-													<td>Singapore</td>
-													<td>64</td>
-													<td>2012/04/09</td>
-													<td>$138,575</td>
-												</tr>
-												<tr>
-													<td>Zenaida Frank</td>
-													<td>Software Engineer</td>
-													<td>New York</td>
-													<td>63</td>
-													<td>2010/01/04</td>
-													<td>$125,250</td>
-												</tr>
-												<tr>
-													<td>Zorita Serrano</td>
-													<td>Software Engineer</td>
-													<td>San Francisco</td>
-													<td>56</td>
-													<td>2012/06/01</td>
-													<td>$115,000</td>
-												</tr>
-												<tr>
-													<td>Jennifer Acosta</td>
-													<td>Junior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>43</td>
-													<td>2013/02/01</td>
-													<td>$75,650</td>
-												</tr>
-												<tr>
-													<td>Cara Stevens</td>
-													<td>Sales Assistant</td>
-													<td>New York</td>
-													<td>46</td>
-													<td>2011/12/06</td>
-													<td>$145,600</td>
-												</tr>
-												<tr>
-													<td>Hermione Butler</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2011/03/21</td>
-													<td>$356,250</td>
-												</tr>
-												<tr>
-													<td>Lael Greer</td>
-													<td>Systems Administrator</td>
-													<td>London</td>
-													<td>21</td>
-													<td>2009/02/27</td>
-													<td>$103,500</td>
-												</tr>
-												<tr>
-													<td>Jonas Alexander</td>
-													<td>Developer</td>
-													<td>San Francisco</td>
-													<td>30</td>
-													<td>2010/07/14</td>
-													<td>$86,500</td>
-												</tr>
-												<tr>
-													<td>Shad Decker</td>
-													<td>Regional Director</td>
-													<td>Edinburgh</td>
-													<td>51</td>
-													<td>2008/11/13</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Michael Bruce</td>
-													<td>Javascript Developer</td>
-													<td>Singapore</td>
-													<td>29</td>
-													<td>2011/06/27</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Donna Snider</td>
-													<td>Customer Support</td>
-													<td>New York</td>
-													<td>27</td>
-													<td>2011/01/25</td>
-													<td>$112,000</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Row ends -->
-
 					</div>
 					<!-- END: .main-content -->
 				</div>
