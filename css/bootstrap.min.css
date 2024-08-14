@@ -7361,6 +7361,14 @@ a.close.disabled {
     background-color: #007bff !important
 }
 
+.b-primary {
+    background-color: #e83e8c !important
+}
+
+.be-primary {
+    background-color: #ffc107 !important
+}
+
 a.bg-primary:focus,
 a.bg-primary:hover,
 button.bg-primary:focus,
