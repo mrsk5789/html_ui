@@ -1030,7 +1030,7 @@ pre code {
 
     .col-sm-4 {
         -ms-flex: 0 0 33.333333%;
-        flex: 0 0 33.333333%;
+        flex: 0 0 9%;
         max-width: 33.333333%
     }
 
@@ -2456,6 +2456,9 @@ textarea.form-control {
 
 .form-group {
     margin-bottom: 1rem
+}
+.form-group {
+    width: 280px;
 }
 
 .form-text {
